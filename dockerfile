@@ -28,6 +28,6 @@ RUN apt update && apt install -y --no-install-recommends apt-transport-https gnu
 RUN apt-get update & \
     python -m pip install --upgrade pip
 COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install torch==2.2.1 torchvision==0.17.1 torchaudio==2.2.1 --index-url https://download.pytorch.org/whl/cu121 transformers==4.30.0 tqdm==4.66.1 numpy==1.23.5 pathlib SoundFile==0.10.2 omegaconf==2.3.0 openai==1.51.2 diffusers==0.25.1 scipy==1.10.1 nltk==3.9.1 matplotlib-inline==0.1.6
 RUN pip uninstall -y transformer-engine
 RUN pip uninstall -y apex
