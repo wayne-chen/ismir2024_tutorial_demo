@@ -58,7 +58,6 @@ fastjsonschema==2.16.3
 ffmpy==0.3.2
 filelock==3.10.0
 fire==0.6.0
-flash-attn @ git+https://github.com/ksivaman/flash-attention.git@7f1c81a5f33e18f22d1e2ba42681f0743bf58b92
 flatten-dict==0.4.2
 frozenlist==1.4.1
 fsspec==2023.6.0
